@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.templatevilla.mathslearnpoint">
+    package="me.amitghosh.mathquiz">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -18,14 +18,14 @@
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="@string/app_id"/>
-        <receiver android:name="com.templatevilla.mathslearnpoint.receiver.AlarmReceiver">
+        <receiver android:name="me.amitghosh.mathquiz.receiver.AlarmReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.templatevilla.mathslearnpoint.provider"
+            android:authorities="me.amitghosh.mathquiz.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -38,7 +38,7 @@
             android:value="true" />
 
         <activity
-            android:name="com.templatevilla.mathslearnpoint.ui.MainActivity"
+            android:name="me.amitghosh.mathquiz.ui.MainActivity"
             android:theme="@style/FullScreenWindow">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -47,7 +47,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.templatevilla.mathslearnpoint.ui.WorkSheetActivity"
+            android:name="me.amitghosh.mathquiz.ui.WorkSheetActivity"
             android:theme="@style/FullScreenWindow" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -56,54 +56,54 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.templatevilla.mathslearnpoint.ui.ActivityDailyTest"
+            android:name="me.amitghosh.mathquiz.ui.ActivityDailyTest"
             android:theme="@style/FullScreenWindow" />
 
         <activity
-            android:name="com.templatevilla.mathslearnpoint.ui.DailyQuizActivity"
+            android:name="me.amitghosh.mathquiz.ui.DailyQuizActivity"
             android:theme="@style/FullScreenWindow" />
 
         <activity
-            android:name="com.templatevilla.mathslearnpoint.ui.SetActivity"
+            android:name="me.amitghosh.mathquiz.ui.SetActivity"
             android:theme="@style/FullScreenWindow" />
 
         <activity
-            android:name="com.templatevilla.mathslearnpoint.ui.LevelActivity"
+            android:name="me.amitghosh.mathquiz.ui.LevelActivity"
             android:theme="@style/FullScreenWindow" />
 
         <activity
-            android:name="com.templatevilla.mathslearnpoint.ui.QuizActivity"
+            android:name="me.amitghosh.mathquiz.ui.QuizActivity"
             android:theme="@style/FullScreenWindow" />
 
         <activity
-            android:name="com.templatevilla.mathslearnpoint.ui.FractionActivity"
+            android:name="me.amitghosh.mathquiz.ui.FractionActivity"
             android:theme="@style/FullScreenWindow" />
 
         <activity
-            android:name="com.templatevilla.mathslearnpoint.ui.MixedLevelActivity"
+            android:name="me.amitghosh.mathquiz.ui.MixedLevelActivity"
             android:theme="@style/FullScreenWindow" />
         <activity
-            android:name="com.templatevilla.mathslearnpoint.ui.MixedQuizActivity"
-            android:theme="@style/FullScreenWindow" />
-
-        <activity
-            android:name="com.templatevilla.mathslearnpoint.ui.MixedScoreActivity"
+            android:name="me.amitghosh.mathquiz.ui.MixedQuizActivity"
             android:theme="@style/FullScreenWindow" />
 
         <activity
-            android:name="com.templatevilla.mathslearnpoint.ui.ScoreActivity"
+            android:name="me.amitghosh.mathquiz.ui.MixedScoreActivity"
             android:theme="@style/FullScreenWindow" />
 
         <activity
-            android:name="com.templatevilla.mathslearnpoint.ui.ReviewAnswerActivity"
+            android:name="me.amitghosh.mathquiz.ui.ScoreActivity"
             android:theme="@style/FullScreenWindow" />
 
         <activity
-            android:name="com.templatevilla.mathslearnpoint.ui.ActivityRemider"
+            android:name="me.amitghosh.mathquiz.ui.ReviewAnswerActivity"
             android:theme="@style/FullScreenWindow" />
 
         <activity
-            android:name="com.templatevilla.mathslearnpoint.ui.AllPdfActivity"
+            android:name="me.amitghosh.mathquiz.ui.ActivityRemider"
+            android:theme="@style/FullScreenWindow" />
+
+        <activity
+            android:name="me.amitghosh.mathquiz.ui.AllPdfActivity"
             android:theme="@style/FullScreenWindow" />
     </application>
 

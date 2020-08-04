@@ -4,7 +4,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "28.0.3"
     defaultConfig {
-        applicationId "com.templatevilla.mathslearnpoint"
+        applicationId "me.amitghosh.mathquiz"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
